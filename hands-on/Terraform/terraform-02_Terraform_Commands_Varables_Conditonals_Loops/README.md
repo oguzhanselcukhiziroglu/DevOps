@@ -509,7 +509,7 @@ variable "num_of_buckets" {
 
 ```bash
 resource "aws_s3_bucket" "tf-s3" {
-  bucket = "${var.s3_bucket_name}-${count.index}"
+  bucket = "${var.s3_bucket_name}-${count.index}"   # Ayrı ayrı isimlerle bucket oluşturuyoruz 
   count = var.num_of_buckets
 }
 ```
@@ -543,7 +543,7 @@ resource "aws_s3_bucket" "tf-s3" {
   bucket = "${var.s3_bucket_name}-${count.index}"
 
   # count = var.num_of_buckets
-  count = var.num_of_buckets != 0 ? var.num_of_buckets : 3
+  count = var.num_of_buckets != 0 ? var.num_of_buckets : 3  # if var.num_of_buckets !=0  >>> count = var.num_of_buckets    else >>> count = 3
 }
 ```
 
@@ -570,7 +570,7 @@ resource "aws_s3_bucket" "tf-s3" {
   # bucket = "var.s3_bucket_name.${count.index}"
   # count = var.num_of_buckets
   # count = var.num_of_buckets != 0 ? var.num_of_buckets : 1
-  for_each = toset(var.users)
+  for_each = toset(var.users)   # listeyi sete çeviriyoruz (variablestaki isim listesini)
   bucket   = "example-tf-s3-bucket-${each.value}"
 }
 

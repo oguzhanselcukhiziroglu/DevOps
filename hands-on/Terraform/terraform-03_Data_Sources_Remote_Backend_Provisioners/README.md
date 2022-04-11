@@ -43,7 +43,7 @@ data "aws_ami" "tf_ami" {
 
 resource "aws_instance" "tf-ec2" {
   ami           = data.aws_ami.tf_ami.id
-  instance_type = var.ec2-type
+  instance_type = var.ec2_type
   key_name      = "mk"
   tags = {
     Name = "${local.mytag}-this is from my-ami"
@@ -93,7 +93,7 @@ terraform destroy
 cd .. && mkdir s3-backend && cd s3-backend && touch backend.tf
 ```
 
-```go
+```go  # backend.tf nin içine alt satırdakileri yapıştır
 provider "aws" {
   region = "us-east-1"
 }
@@ -104,7 +104,7 @@ resource "aws_s3_bucket" "tf-remote-state" {
   force_destroy = true # Normally it must be false. Because if we delete s3 mistakenly, we lost all of the states.
 }
 
-resource "aws_s3_bucket_server_side_encryption_configuration" "mybackend" {
+resource "aws_s3_bucket_server_side_encryption_configuration" "mybackend" {    # artık ayrı bir blok olarak tanımlanıyor
   bucket = aws_s3_bucket.tf-remote-state.bucket
 
   rule {
@@ -114,14 +114,14 @@ resource "aws_s3_bucket_server_side_encryption_configuration" "mybackend" {
   }
 }
 
-resource "aws_s3_bucket_versioning" "versioning_backend_s3" {
+resource "aws_s3_bucket_versioning" "versioning_backend_s3" {      # bucket versiyonlamayı aktif hale getiriyoruz
   bucket = aws_s3_bucket.tf-remote-state.id
   versioning_configuration {
     status = "Enabled"
   }
 }
 
-resource "aws_dynamodb_table" "tf-remote-state-lock" {
+resource "aws_dynamodb_table" "tf-remote-state-lock" {     # lock yapmak için dynamodb kullanıyoruz,   hash_key
   hash_key = "LockID"
   name     = "tf-s3-app-lock"
   attribute {
@@ -160,7 +160,7 @@ terraform {
     encrypt = true
   }
 }
-```
+```   # backendi değiştirdiğimiz için s3-backend'e git ve terraform init yap.
 
 - Go to the `terraform-aws` directoy and run the commands below. First try to terraform apply command.
 
