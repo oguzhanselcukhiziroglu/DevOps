@@ -452,7 +452,7 @@ docker container ls
 - Run the `nginx` container at the detached mod, name the container as `nginx-default`, and open <public-ip> on browser and show the nginx default page.
 
 ```bash
-docker run -d --name nginx-default -p 80:80  nginx
+docker run -d --name nginx-default -p 80:80  nginx     # port publishing var burda
 ```
 
 - Add a security rule for protocol HTTP port 80 and show Nginx Web Server is running on Docker Machine.
