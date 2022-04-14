@@ -313,7 +313,7 @@ docker volume rm cw-vol
 
 ```bash
 docker volume create empty-vol
-docker volume create full-vol
+docker volume create full-vol     # docker volume ls
 ```
 
 - Run an `alpine` container with interactive shell open, name the container as `vol-lesson`, attach the volume `full-vol` to `/cw` mount point in the container, and add command to run alpine shell. 
