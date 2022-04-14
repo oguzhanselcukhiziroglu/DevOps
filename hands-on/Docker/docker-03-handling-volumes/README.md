@@ -343,7 +343,7 @@ sudo ls /var/lib/docker/volumes/full-vol/_data
 - Run the `clarusway/hello-clarus` container with interactive shell open, name the container as `clarus`, and show the inside of `hello-clarus` directory.
 
 ```bash
-docker run -it --name clarus clarusway/hello-clarus sh
+docker run -it --name clarus clarusway/hello-clarus sh     # docker a push edilmiş bir image = clarusway
 / # ls
 bin           etc           home          media         opt           root          sbin          sys           usr
 dev           hello-clarus  lib           mnt           proc          run           srv           tmp           var
