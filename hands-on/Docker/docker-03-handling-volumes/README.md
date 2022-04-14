@@ -466,7 +466,7 @@ http://<public-ip>:80
 ```bash
 docker exec -it nginx-default bash
 root@4a1c7e5f394a:/# cd /usr/share/nginx/html
-root@4a1c7e5f394a:/usr/share/nginx/html# ls
+root@4a1c7e5f394a:/usr/share/nginx/html # ls
 50x.html  index.html
 root@4a1c7e5f394a:/usr/share/nginx/html# cat index.html
 ```
