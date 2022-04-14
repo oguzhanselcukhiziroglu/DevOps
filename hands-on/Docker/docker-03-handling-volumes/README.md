@@ -57,7 +57,7 @@ systemctl status docker
 - Run an `alpine` container with interactive shell open, and add command to run alpine shell. Here, explain explain what the alpine container is and why it is so popular. (Small size, Secure, Simple, Fast boot)
 
 ```bash
-docker run -it alpine ash
+docker run -it alpine ash     # sudo ile komutu gir
 ```
 
 - Display the os release of the alpine container.
