@@ -43,7 +43,7 @@ At the end of the this hands-on training, students will be able to;
 - Connect to your instance with SSH.
 
 ```bash
-ssh -i .ssh/call-training.pem ec2-user@ec2-3-133-106-98.us-east-2.compute.amazonaws.com
+ssh -i .ssh/call-training.pem ec2-user@ec2-3-133-106-98.us-east-2.compute.amazonaws.com     # ya da remote ssh bağlantısı kur
 ```
 
 ## Part 2 - Data Persistence in Docker Containers
