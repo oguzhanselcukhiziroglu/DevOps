@@ -261,7 +261,7 @@ exit
 - Run an another `ubuntu` container with interactive shell open, name the container as `clarus4th`, attach the volume `cw-vol` as read-only to `/cw4th` mount point in the container, and add command to run bash shell.
 
 ```bash
-docker run -it --name clarus4th -v cw-vol:/cw4th:ro ubuntu bash
+docker run -it --name clarus4th -v cw-vol:/cw4th:ro ubuntu bash     # farklı olarak volume'ü read only bağlıyoruz
 ```
 
 - List the files in `/cw4th` folder, and show that we can reach the all files created earlier.
