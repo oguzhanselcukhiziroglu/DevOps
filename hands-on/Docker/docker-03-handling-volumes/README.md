@@ -464,7 +464,7 @@ http://<public-ip>:80
 - Attach the `nginx` container, show the index.html in the /usr/share/nginx/html directory.
 
 ```bash
-docker exec -it nginx-default bash
+docker exec -it nginx-default bash     # comtainerın terminaline giriyoruz
 root@4a1c7e5f394a:/ # cd /usr/share/nginx/html
 root@4a1c7e5f394a:/usr/share/nginx/html # ls
 50x.html  index.html
