@@ -231,7 +231,7 @@ ls && cat loadmore.txt
 - Exit the `clarus2nd` container and return to ec2-user bash shell.
 
 ```bash
-exit
+exit          # sudo cat /var/lib/volumes/cw-vol/_data/
 ```
 
 - Run a `ubuntu` container with interactive shell open, name the container as `clarus3rd`, attach the volume `cw-vol` to `/cw3rd` mount point in the container, and add command to run bash shell.
