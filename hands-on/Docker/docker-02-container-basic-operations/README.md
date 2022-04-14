@@ -93,7 +93,7 @@ apt-get update && apt-get upgrade -y
   - Install `vim` editor.
 
     ```bash
-    apt-get install vim
+    apt-get install vim   # limted os olduğu için vim indirmemiz gerekiyor
     ```
 
   - Edit `myfile.txt` file with `vim` editor and type `Hello from the Ubuntu Container` to show that `vim` command can be run now.
