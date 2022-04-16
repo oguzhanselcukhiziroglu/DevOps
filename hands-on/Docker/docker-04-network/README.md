@@ -112,7 +112,7 @@ ping -c 4 google.com # ping ile erişim kontrolü yapıyoruz
 - Ping `clarus2nd `container by its IP four times to show the connection.
 
 ```bash
-ping -c 4 172.17.0.3
+ping -c 4 172.17.0.3 # clarus1 in içinden clarus2 ye erişim var
 ```
 
 - Try to ping `clarus2nd `container by its name, should face with bad address. Explain why failed (due to default bridge configuration not works with container names)
