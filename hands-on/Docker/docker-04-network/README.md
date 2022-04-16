@@ -106,7 +106,7 @@ ifconfig
 - In the `clarus1st` container ping google.com four times to check internet connection.
 
 ```bash
-ping -c 4 google.com
+ping -c 4 google.com # ping ile erişim kontrolü yapıyoruz
 ```
 
 - Ping `clarus2nd `container by its IP four times to show the connection.
