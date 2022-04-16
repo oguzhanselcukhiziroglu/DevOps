@@ -262,7 +262,7 @@ docker container run --rm -dit --network host --name my_nginx nginx # network ü
 - Show Nginx Web Server is running on Docker Machine.
 
 ```text
-http://ec2-18-232-70-124.compute-1.amazonaws.com
+http://ec2-18-232-70-124.compute-1.amazonaws.com   # network ümüz host olduğu için public ip direkt çalışacak
 ```
 
 - Show the details of network interface configuration of `my_nginx` container.
