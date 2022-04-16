@@ -147,7 +147,7 @@ docker network ls
 - Show the details of `clarusnet`, and show that there is no container yet.
 
 ```bash
-docker network inspect clarusnet
+docker network inspect clarusnet # subnetini gatewayini vs görebiliyoruz bu şekilde
 ```
 
 - Run four `alpine` containers with interactive shell, in detached mode, name the containers as `clarus1st`, `clarus2nd`, `clarus3rd` and `clarus4th`, and add command to run alpine shell. Here, 1st and 2nd containers should be in `clarusnet`, 3rd container should be in default network bridge, 4th container should be in both `clarusnet` and default network bridge.
