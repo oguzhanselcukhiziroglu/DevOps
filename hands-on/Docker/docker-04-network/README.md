@@ -118,7 +118,7 @@ ping -c 4 172.17.0.3 # clarus1 in içinden clarus2 ye erişim var
 - Try to ping `clarus2nd `container by its name, should face with bad address. Explain why failed (due to default bridge configuration not works with container names)
 
 ```bash
-ping -c 4 clarus2nd # Neden fail olduk? Çünkü isimler üzerinden erişememiyoruz.
+ping -c 4 clarus2nd # Neden fail olduk? Çünkü isimler üzerinden erişemiyoruz.
 ```
 
 - Disconnect from `clarus1st` without stopping it (CTRL + p + q).
