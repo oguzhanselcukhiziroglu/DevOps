@@ -157,7 +157,7 @@ docker container run -dit --network clarusnet --name clarus1st alpine ash
 docker container run -dit --network clarusnet --name clarus2nd alpine ash
 docker container run -dit --name clarus3rd alpine ash
 docker container run -dit --name clarus4th alpine ash
-docker network connect clarusnet clarus4th
+docker network connect clarusnet clarus4th # clarus4th u clarusnet e bağladık
 ```
 
 - List all running containers and show there up and running.
