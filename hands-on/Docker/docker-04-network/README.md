@@ -256,7 +256,7 @@ docker container stop ng
 - Run a `nginx` web server, name the container as `my_nginx`, and connect the web server to host network. 
 
 ```bash
-docker container run --rm -dit --network host --name my_nginx nginx
+docker container run --rm -dit --network host --name my_nginx nginx # network ü host (farklı olarak)
 ```
 
 - Show Nginx Web Server is running on Docker Machine.
