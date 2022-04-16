@@ -308,4 +308,4 @@ ifconfig
 ping -c 4 google.com
 ```
 
-- Exit from container `nullcontainer`, should be removed automatically due to `--rm` flag.
+- Exit from container `nullcontainer`, should be removed automatically due to `--rm` flag. # ÖNEMLİ
