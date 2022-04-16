@@ -135,7 +135,7 @@ docker container rm clarus1st clarus2nd # docker ps - a ile kontrol et
 - Create a bridge network `clarusnet`.
 
 ```bash
-docker network create --driver bridge clarusnet
+docker network create --driver bridge clarusnet # driver tipi bridge, ismi clarusnet
 ```
 
 - List all networks available in Docker, and show the user-defined `clarusnet`.
