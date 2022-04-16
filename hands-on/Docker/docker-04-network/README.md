@@ -127,7 +127,7 @@ ping -c 4 clarus2nd # Neden fail olduk? Çünkü isimler üzerinden erişemiyoru
 
 ```bash
 docker container stop clarus1st clarus2nd
-docker container rm clarus1st clarus2nd
+docker container rm clarus1st clarus2nd # docker ps - a ile kontrol et
 ```
 
 ## Part 3 - User-defined Network Bridge in Docker
