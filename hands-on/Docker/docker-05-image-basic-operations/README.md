@@ -182,7 +182,7 @@ docker push clarusway/flask-app:1.0
 - Create a Dockerfile listing necessary packages and modules, and name it `Dockerfile-alpine`
   
 ```Dockerfile
-FROM python:alpine
+FROM python:alpine       # Buradaki komutlar ne işe yarıyor kontrol et. Liste yap.
 RUN pip install flask
 COPY . /app
 WORKDIR /app
