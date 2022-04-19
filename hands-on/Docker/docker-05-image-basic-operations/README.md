@@ -34,7 +34,7 @@ At the end of the this hands-on training, students will be able to;
 
 ## Outline
 
-- Part 1 - Launch a Docker Machine Instance and Connect with SSH
+- Part 1 - Launch a Docker Machine Instance and Connect with SSH   # remote ssh ile bağlan
 
 - Part 2 - Using Docker Image Commands and Docker Hub
 
