@@ -12,7 +12,7 @@ At the end of the this hands-on training, students will be able to;
 
 - list images in Docker.
 
-- explain Docker Hub.
+- explain Docker Hub.   # gmail ile bağlıyım
 
 - have a Docker Hub account and create a repository.
 
