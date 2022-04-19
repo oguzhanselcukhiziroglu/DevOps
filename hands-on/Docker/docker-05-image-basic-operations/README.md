@@ -227,5 +227,5 @@ docker image tag clarusway/flask-app:2.0 clarusway/flask-app:latest
 - Delete image with `image id` locally.
 
 ```bash
-docker image rm 497
+docker image rm 497    # Pratik yol
 ```
