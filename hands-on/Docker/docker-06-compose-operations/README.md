@@ -121,7 +121,7 @@ The image contains all the dependencies for the application, including Python it
 echo '
 FROM python:3.7-alpine                              # bir image başka bir imagedan yaratılır
 WORKDIR /code                                       # directoryye git
-ENV FLASK_APP app.py                                # 
+ENV FLASK_APP app.py                                # FLASK_APP app.py oldu
 ENV FLASK_RUN_HOST 0.0.0.0
 RUN apk add --no-cache gcc musl-dev linux-headers   # Linux komutlarını run ile çalıştırıyoruz
 COPY requirements.txt requirements.txt
