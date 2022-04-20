@@ -124,7 +124,7 @@ WORKDIR /code                                       # directoryye git
 ENV FLASK_APP app.py                                # FLASK_APP app.py oldu
 ENV FLASK_RUN_HOST 0.0.0.0
 RUN apk add --no-cache gcc musl-dev linux-headers   # Linux komutlarını run ile çalıştırıyoruz
-COPY requirements.txt requirements.txt
+COPY requirements.txt requirements.txt              # Hazırladığımız requirements.txt yi gönderdik
 RUN pip install -r requirements.txt
 EXPOSE 5000
 COPY . .
