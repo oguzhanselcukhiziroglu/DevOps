@@ -126,7 +126,7 @@ ENV FLASK_RUN_HOST 0.0.0.0
 RUN apk add --no-cache gcc musl-dev linux-headers   # Linux komutlarını run ile çalıştırıyoruz
 COPY requirements.txt requirements.txt              # Hazırladığımız requirements.txt yi gönderdik
 RUN pip install -r requirements.txt
-EXPOSE 5000
+EXPOSE 5000                                         # 5000 portu ile yayın yapacağız
 COPY . .
 CMD ["flask", "run"]
 ' > Dockerfile
