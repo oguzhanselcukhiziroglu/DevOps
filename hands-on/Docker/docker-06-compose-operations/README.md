@@ -128,7 +128,7 @@ COPY requirements.txt requirements.txt              # Hazırladığımız requir
 RUN pip install -r requirements.txt
 EXPOSE 5000                                         # 5000 portu ile yayın yapacağız
 COPY . .
-CMD ["flask", "run"]
+CMD ["flask", "run"]                                # artık image servisin ayağa kalmasını söyledik
 ' > Dockerfile
 ```
 
