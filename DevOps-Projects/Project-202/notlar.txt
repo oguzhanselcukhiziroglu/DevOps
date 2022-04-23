@@ -1,0 +1,22 @@
+Yapılacaklar:
+
+- Private github repository
+  - phonebook-app.py
+  - templates
+  - > dbserver.endpoint
+
+- Launch Template
+- ALB
+- ALB Listener
+- ALB Target Group
+- Auto Scaling Group
+- DB Instance
+- Server Security Group >> ALB Security Group'tan gelen 80'i alacak
+- ALB Security Group >> 80 portu açık olacak
+- RDS Security Group >> EC2'dan gelen 3306 portunu alsın
+- dbserver.endpoint
+
+- EC2 instance'larda;
+  - Python ve Flask kütüphanelerinin yüklü olması lazım.
+  - git yüklü olmalı
+  - Phonebook-App.py + templates gelecek
