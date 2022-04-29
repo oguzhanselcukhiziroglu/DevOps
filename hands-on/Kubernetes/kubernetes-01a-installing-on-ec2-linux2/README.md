@@ -87,11 +87,11 @@ bash
 - Install helper packages for Kubernetes.
 
 ```bash
-sudo apt-get update && sudo apt-get install -y apt-transport-https gnupg2
+sudo apt-get update && sudo apt-get install -y apt-transport-https gnupg2   # kubernetes paketlerini indiriyoruz 
 
 curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
 
-echo "deb https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee -a /etc/apt/sources.list.d/kubernetes.list
+echo "deb https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee -a /etc/apt/sources.list.d/kubernetes.list   # kubernetes in reposuna listesine erişiyoruz
 ```
 
 - Update app repository and install Kubernetes packages and Docker.
@@ -200,7 +200,7 @@ sudo chown $(id -u):$(id -g) $HOME/.kube/config
 - Activate the `Flannel` pod networking and explain briefly the about network add-ons on `https://kubernetes.io/docs/concepts/cluster-administration/addons/`.
 
 ```bash
-kubectl apply -f https://github.com/coreos/flannel/raw/master/Documentation/kube-flannel.yml
+kubectl apply -f https://github.com/coreos/flannel/raw/master/Documentation/kube-flannel.yml   # 151, 176, 177, 178, 203
 ```
 
 - Master node (also named as Control Plane) should be ready, show existing pods created by user. Since we haven't created any pods, list should be empty.
