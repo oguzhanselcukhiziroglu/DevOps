@@ -637,7 +637,7 @@ $ kubectl run -it --rm load-generator --image=busybox /bin/sh
 
 Hit enter for command prompt
 
-while true; do wget -q -O- http://<puplic ip>:<port number of php-apache-service>; done 
+while true; do wget -q -O- http://<puplic ip>:<port number of php-apache-service>; done   # while true; do wget -q -O- http://php-apache-service; done
 ```
 
 Within a minute or so, we should see the higher CPU load by executing:
