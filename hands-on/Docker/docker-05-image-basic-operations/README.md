@@ -227,5 +227,28 @@ docker image tag clarusway/flask-app:2.0 clarusway/flask-app:latest
 - Delete image with `image id` locally.
 
 ```bash
+<<<<<<< HEAD
 docker image rm 497    # Pratik yol
 ```
+=======
+docker image rm 497
+```
+
+Optional:
+* Dockerize another application:
+FROM python:2.7
+COPY . /app
+WORKDIR /app
+RUN pip install -r requirements.txt
+Entrypoint ["python" "image_resizer.py"]
+https://github.com/vmware-archive/image-resizing-service
+* echo "url" | base64 | w0 
+
+* from alpine, run apk add --no-cache curl, entrypoint ["curl"]
+* docker history curl
+* see inside of the layers with dive (wagoodman/dive)
+* google/go-containerregistry crane
+crane manifest registry.address
+crane blob image.address@layer-hash > layer.tar.gz
+tar tvf layer.tar.gz | grep -v cert
+>>>>>>> ed7d76aa59fffd1ec2ae67470f7fc7fefc99e188
